@@ -1,0 +1,26 @@
+---
+title: "Data Cleaning"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-libraries}
+library(tidyverse)
+```
+
+Load the data in using this command:
+```{r read-data}
+pgaData <- read_csv("data/tourneyLevelRawData2016-2022.csv")
+```
+
+This is a MASSIVE dataset, containing every PGA player's complete tournament data from 2016 (when Bryson entered the PGA tour) to 2022 (present). Let's filter for a few things to make it a little bit easier to navigate to the people we want to see.
+
+```{r filter-only-bryson}
+brysonTournamentResults <- pgaData %>%
+  filter(Player_initial_last == "B. DeChambeau")
+
+write_csv(brysonTournamentResults, "data/BrysonTournaments.csv")
+```
