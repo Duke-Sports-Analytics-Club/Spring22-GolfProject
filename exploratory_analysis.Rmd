@@ -1,0 +1,23 @@
+---
+title: "Exploratory Analysis"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+library(tidyverse)
+```
+
+Reading in the Bryson dataset:
+```{r read-data}
+brysonTourneys <- read_csv("data/BrysonTournaments.csv")
+
+brysonTourneys <- brysonTourneys %>%
+  select(-c("tournament id","player id","Var.20","Unnamed: 0",
+            "Unnamed: 2", "Unnamed: 3", "Unnamed: 4", "Var.26"))
+
+
+```
