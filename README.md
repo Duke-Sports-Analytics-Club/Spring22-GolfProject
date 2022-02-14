@@ -5,4 +5,7 @@ In particular, this project performs a case study on Bryson DeChambeau, a 28-yea
 
 By comparing DeChambeau's tournament statistics (in areas including, but not limited to driving distance, dirivng accuracy, putting, scrambling percentage, and more), we want to see what the true strengths and weaknesses of his game are, and by comparing him to other golfers on the PGA Tour with other notable strengths (like Colin Morikawa's iron play), we want to see which area of the game it is most advantageous to be better than your opponents at.
 
+The informational document for this project (including brainstorming ideas, meeeting summaries, etc.) can be found at the Google Doc here: https://docs.google.com/document/d/1FcgSk6UFDg-zEunba3PJqxxvqBrkuhFN9JKiUP_ADrY/edit?usp=sharing
+This document will be used for storing places where the data was found and scraped.
+
 This project was completed in the Spring 2022 semester at Duke University through the Duke Sports Analytics Club. Duke Sports Analytics Club claims all rights to this project, and the club may take credit for this project as long as the original authors are credited as well.
