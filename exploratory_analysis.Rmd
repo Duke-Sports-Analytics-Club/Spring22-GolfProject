@@ -20,4 +20,26 @@ brysonTourneys <- brysonTourneys %>%
             "Unnamed: 2", "Unnamed: 3", "Unnamed: 4", "Var.26"))
 
 
+courseInfo <- read_csv("data/datagolf_courseInfo.csv")
+```
+
+
+```{r eda}
+ggplot(data = brysonTourneys,
+       mapping = aes(x = sg_ott, y = sg_app)) +
+  geom_point() +
+  geom_smooth(method = 'lm', formula = y~x) +
+  geom_vline(xintercept = 0, color = 'red') +
+  labs(x = "Strokes Gained: OTT",
+       y = "Strokes Gained: APP",
+       title = "Bryson's OTT and APP Relationship",
+       subtitle = "Using 2016-2022 PGA Tour Data") +
+  theme_classic()
+```
+
+```{r eda}
+ggplot(data = brysonTourneys,
+       mapping = aes(x = Finish, y = sg_ott)) +
+  geom_point()
+  
 ```
